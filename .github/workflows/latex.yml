@@ -16,15 +16,18 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv.tex
+          working_directory: ./latex
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v4
         with:
           name: cv-pdf
-          path: cv.pdf
+          path: latex/cv.pdf
 
-      - name: Copy PDF for GitHub Pages
-        run: cp cv.pdf ./docs/
+      - name: Prepare docs folder
+        run: |
+          mkdir -p docs
+          cp latex/cv.pdf docs/
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
