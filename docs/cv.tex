@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.1 (19/6/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION 
+%----------------------------------------------------------------------------------------
+
+\userinformation{ % Set the content that goes into the sidebar of each page
+\begin{flushright}
+% Comment out this figure block if you don't want a photo
+\includegraphics[width=0.6\columnwidth]{_}\\[\baselineskip] % Your photo
+\small % Smaller font size
+Salih Karabulut \\ % Your name
+\url{karabulut18@itu.edu.tr} \\ % Your email address
+\url{salih14k@gmail.com} \\ % Your URL
+(506) 601 8653 \\ % Your phone number
+\Sep % Some whitespace
+
+\textbf{\href{https://github.com/karabulut18}{Github}} \\
+\Sep % Some whitespace
+
+\textbf{\href{https://www.linkedin.com/in/salih-karabulut-4b78271b5}{LinkedIn}} \\
+\Sep % Some whitespace
+
+\Sep % Some whitespace
+\textbf{Address} \\
+Kağıthane, İstanbul\\ % Address 2
+Turkey \\ % Address 3
+\vfill % Whitespace under this block to push it up under the photo
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{Salih Karabulut} % Large heading - your name
+
+\cvsubheading{Computer Engineer} % Subheading - your occupation/specialization
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\CVSection{Experience}
+{\small
+
+\CVItem{Software Developer, HFT\footnote{Company name withheld due to confidentiality} \hfill 05/23 -- 07/25}{
+\begin{itemize}
+\item Built a RabbitMQ-like task distribution system in C++ over TCP using a requester-server-processor architecture. Developed a Qt-based monitoring application for limited control and real-time task tracking.
+\item Developed a file server in C++ over TCP supporting concurrent reads and writes. Packaged the reader and writer components as a static library for internal use. Integrated SVN repository support as an optional file source. Implemented a subscriber-like mechanism where readers automatically receive updated files and can also subscribe to entire directories.
+\item Developed a tunneling application to bridge TCP-to-UDP and UDP-to-TCP communication for seamless protocol translation.
+\item Responsible for maintenance of internal C/C++ libraries and supports developers with tooling and debugging (file operations, logging, config file parsing etc.).
+\end{itemize}
+}
+
+\CVItem{Blockchain Developer Intern, Doğuş Technology \hfill 05/22 -- 07/22}{
+\begin{itemize}
+\item Developed a small blockchain-based hamburger selling website using MetaMask and testnet faucet for transactions.
+\end{itemize}
+}
+\CVItem{Android Developer Internship, IoT Turkey}{
+\begin{itemize}
+\item Worked with Kotlin and Firebase to develop Android applications as part of an early internship experience.
+\end{itemize}
+}
+
+
+
+\CVItem{Volunteer Experience}{
+\begin{itemize}
+\item Member of ITU Volunteer Club, 2018--2019 — Gave math and geometry classes and attended question-solving sessions for high school students to contribute to equal opportunity in education.
+
+\item Digital Marketing \& Business Development at IoT Turkey, focusing on outreach and partnerships.
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME
+%----------------------------------------------------------------------------------------
+\CVSection{Education}
+
+{\small
+\CVItem{Kahramanmaraş Science High School \hfill 2014 -- 2018}{}
+\CVItem{Istanbul Technical University, Computer Engineering \hfill 2018 -- 2025}{
+\vspace{1em}
+\begin{itemize}
+\item Completed multiple school projects in C/C++ involving data structures, algorithms, OOP, and OS concepts.
+\item Graduation project (09/23 -- 01/25): Developed a testbed for semantic communication using GNU Radio and Docker. Simulated real-world data transmission with channel impairments and file-based communication via BPSK modulation. Designed modular publisher/subscriber architecture to enable future encoder-decoder model integration.
+\end{itemize}
+}
+}
+
+
+%------------------------------------------------
+% Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%---------------------------------------------------------------------------------------- % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\CVItem{Programming}
+{{\small
+\begin{tabular}{p{0.18\textwidth} p{0.18\textwidth} p{0.18\textwidth} p{0.18\textwidth}}
+\textbf{Languages} \\
+\bluebullet C/C++ & \bluebullet Python & & \\
+
+\textbf{Tools} \\
+\bluebullet Git & \bluebullet Docker & \bluebullet Vim & \bluebullet Linux \\
+\bluebullet SVN & \bluebullet GDB & \bluebullet Gnu-Radio & \bluebullet Valgrind \\
+\bluebullet Firebase & & & \\
+
+\textbf{Topics} \\
+\bluebullet OOP & \bluebullet Socket Prog. & \bluebullet Multi-Threading & 
+\bluebullet Concurrency 
+\end{tabular}}}
+
+
+
+%----------------------------------------------------------------------------------------
+%\CVSection{Projects}
+
+%------------------------------------------------
+
+%\CVItem{Brownie fund me}
+%{\begin{tabular}{p{0.8\textwidth} p{0.8\textwidth} p{0.8\textwidth}}
+%{\url {https://github.com/karabulut18}}
+
+%\end{tabular}}
+
+
+%\Sep % Extra whitespace after the end of a major section
+%	NEW PAGE DELIMITER
+%	Place this block wherever you would like the content of your CV to go onto the next page
+%----------------------------------------------------------------------------------------
+ % Start a new page
+ % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------
+%	INTERESTS
+%----------------------------------------------------------------------------------------
+
+\end{document}
