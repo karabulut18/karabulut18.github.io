@@ -12,6 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      -name:  List of files
+        run: ls -R
+
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
