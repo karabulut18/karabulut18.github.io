@@ -18,8 +18,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: cv.tex
-          working_directory: ./latex
+          root_file: latex/cv.tex
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v4
