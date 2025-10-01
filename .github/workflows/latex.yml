@@ -30,9 +30,9 @@ jobs:
 
       - name: Prepare docs folder
         run: |
-          mkdir -p ./docs
-          cp latex/cv.pdf ./docs/cv.pdf
-          cat <<EOF > ./docs/index.html
+          mkdir -p ./docs/cv
+          cp latex/cv.pdf ./docs/cv/cv.pdf
+          cat <<EOF > ./docs/cv/index.html
           <!DOCTYPE html>
           <html lang="en">
           <head>
