@@ -1,2 +1,2 @@
 # karabulut18.github.io
-title: My CV
+[cv](https://karabulut18.github.io/cv/)
