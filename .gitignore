@@ -1,0 +1,10 @@
+# LaTeX
+latex/out/
+*.aux
+*.log
+*.out
+*.pdf
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+.agent
