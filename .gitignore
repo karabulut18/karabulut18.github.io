@@ -7,4 +7,9 @@ latex/out/
 *.fdb_latexmk
 *.fls
 *.synctex.gz
+
+# Deployment
+/docs/
+
+# System
 .agent

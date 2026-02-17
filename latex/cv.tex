@@ -1,19 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Wenneker Resume/CV
-% LaTeX Template
-% Version 1.1 (19/6/2016)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
-% Vel (vel@LaTeXTemplates.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	Salih Karabulut - CV
+%----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
@@ -112,24 +99,51 @@ Turkey \\ % Address 3
 {\small
 \CVItem{Istanbul Technical University, Computer Engineering \hfill 2018 -- 2025}{
 \begin{itemize}
-\item Graduation project: Developed a modular testbed for \textbf{semantic communication} using GNU Radio and Docker, simulating wireless channel impairments and BPSK modulation.
+\item \textbf{Graduation Project:} Developed a modular testbed for \href{https://github.com/karabulut18/semanticCommunication}{semantic communication} using GNU Radio and Docker, simulating wireless channel impairments and BPSK modulation.
 \end{itemize}
 }
 \CVItem{Kahramanmaraş Science High School \hfill 2014 -- 2018}{}
 }
 
 %----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\begin{minipage}{\linewidth}
+\CVSection{Projects}
+
+{\small
+\CVItem{\href{https://github.com/karabulut18/redis}{Redis from Scratch} \hfill \textit{C++}}
+{
+\begin{itemize}
+\item Developed a high-performance Key-Value store from the ground up, implementing custom protocol parsing and socket programming.
+\end{itemize}
+}
+}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\CVItem{\href{https://github.com/karabulut18/systemProgramming}{System Programming Experiments} \hfill \textit{C, POSIX}}
+{
+\begin{itemize}
+\item Implemented various low-level utilities exploring process management, concurrency, and POSIX system calls.
+\end{itemize}
+}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
+\begin{minipage}{\linewidth}
 \CVSection{Technical Skills}
-{{\small
-\begin{tabular}{p{0.21\textwidth} p{0.21\textwidth} p{0.21\textwidth}}
+{\small
+\begin{tabular}{@{}p{0.31\linewidth} p{0.31\linewidth} p{0.31\linewidth}@{}}
 \textbf{Languages} & \textbf{Tools} & \textbf{Topics} \\
 \bluebullet C/C++, Python & \bluebullet Git, Docker, Linux & \bluebullet Distributed Sys. \\
 \bluebullet Kotlin & \bluebullet GDB, Valgrind, SVN & \bluebullet Network Prog. \\
 & \bluebullet GNU Radio, CMake & \bluebullet Multithreading \\
 \end{tabular}
-}}
+}
+\end{minipage}
 
 
 
