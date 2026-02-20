@@ -20,8 +20,8 @@
 %\includegraphics[width=0.6\columnwidth]{_.jpeg}\\[\baselineskip] % Your photo
 \small % Smaller font size
 Salih Karabulut \\ % Your name
-\url{salih14k@gmail.com} \\ % Your URL
-\url{karabulut18@itu.edu.tr} \\ % Your email address
+{\footnotesize \mbox{salih14k@gmail.com}} \\ % Your URL
+{\footnotesize \mbox{karabulut18@itu.edu.tr}} \\ % Your email address
 (506) 601 8653 \\ % Your phone number
 \Sep % Some whitespace
 
@@ -33,8 +33,7 @@ Salih Karabulut \\ % Your name
 
 \Sep % Some whitespace
 \textbf{Address} \\
-Kağıthane, İstanbul\\ % Address 2
-Turkey \\ % Address 3
+Istanbul, Turkey \\ % Address
 \vfill % Whitespace under this block to push it up under the photo
 \end{flushright}
 }
@@ -56,50 +55,39 @@ Turkey \\ % Address 3
 \cvsubheading{Computer Engineer} % Subheading - your occupation/specialization
 
 %----------------------------------------------------------------------------------------
-%	EXPERIENCE
-%----------------------------------------------------------------------------------------
-\CVSection{Experience}
-{\small
-
-\CVItem{Software Developer, HFT\footnote{Company name withheld due to confidentiality} \hfill 05/23 -- 07/25}{
-\begin{itemize}
-\item Architected a \textbf{distributed task-allocation system} in C++ over TCP using a requester-server-processor topology, ensuring fault-tolerant delivery and real--time execution.
-\item Engineered a high-throughput \textbf{TCP file server} optimized for concurrent read/write operations; implemented a custom static library and a pub/sub mechanism for automated vertical file synchronization.
-\item Developed a \textbf{low-latency protocol tunneling application} (TCP $\leftrightarrow$ UDP) for seamless bi-directional translation between legacy and modern systems.
-\item Maintained and optimized mission-critical \textbf{C/C++ shared libraries}, delivering robust tooling for logging, config parsing, and high-performance file IO.
-\item Deployed a \textbf{scalable state-monitoring solution} for a fleet of 100+ machines via TCP, enabling real-time infrastructure visibility and health tracking.
-\item Developed a \textbf{real-time state-synchronization system} designed for remote environment control, focusing on high-performance state propagation and system responsiveness.
-\end{itemize}
-}
-
-\CVItem{Blockchain Developer Intern, Doğuş Technology \hfill 05/22 -- 07/22}{
-\begin{itemize}
-\item Prototyped a blockchain e-commerce platform using smart contracts and MetaMask.
-\end{itemize}
-}
-\CVItem{Android Developer Intern, IoT Turkey \hfill 06/21 -- 08/21}{
-\begin{itemize}
-\item Architected Android applications using \textbf{Kotlin} and \textbf{Firebase}, focusing on real-time data synchronization.
-\end{itemize}
-}
-
-\CVItem{Volunteer Experience}{
-\begin{itemize}
-\item \textbf{ITU Volunteer Club} (2018--2019): Tutored high school students in \textbf{Geometry} and Math, fostering equal opportunity in education.
-\item \textbf{IoT Turkey}: Contributed to business development and strategic partnerships.
-\end{itemize}
-}
-}
-
-%----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \CVSection{Education}
 
 {\small
-\CVItem{Istanbul Technical University, B.S. Computer Engineering \hfill Graduated 2025}{
+\CVItem{Istanbul Technical University, B.S. Computer Engineering | Istanbul, Turkey | Graduated 2025}{}
+}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\CVSection{Experience}
+{\small
+
+\CVItem{Software Developer | Fintech / HFT Company | Istanbul, Turkey | 05/2023 - 07/2025}{
 \begin{itemize}
-\item \textbf{Graduation Project:} Developed a modular testbed for \href{https://github.com/karabulut18/semanticCommunication}{semantic communication} using GNU Radio and Docker, simulating wireless channel impairments and BPSK modulation.
+\item Architected a \textbf{distributed task-allocation system} in \textbf{C++17} using a requester-server-processor topology, ensuring fault-tolerant delivery and real-time execution in a Systems Programming environment.
+\item Engineered a high-throughput \textbf{TCP file server} optimized for concurrent read/write operations; implemented a custom static library and a pub/sub mechanism for automated vertical file synchronization.
+\item Developed a \textbf{low-latency protocol tunneling application} (TCP/UDP) for seamless bi-directional translation between legacy and modern systems, reducing latency by 20\%.
+\item Maintained and optimized mission-critical \textbf{C/C++ shared libraries}, delivering robust tooling using Memory Management, IPC, STL, and POSIX Threads for high-performance file IO.
+\item Deployed a \textbf{scalable state-monitoring solution} using Socket Programming for a fleet of 100+ machines via TCP, enabling real-time infrastructure visibility in the Low-Latency Engineering domain.
+\item Developed a \textbf{real-time state-synchronization system} designed for remote environment control, focusing on high-performance state propagation and system responsiveness.
+\end{itemize}
+}
+
+\CVItem{Blockchain Developer Intern | Doğuş Technology | Istanbul, Turkey | 05/2022 - 07/2022}{
+\begin{itemize}
+\item Prototyped a blockchain e-commerce platform using smart contracts and MetaMask.
+\end{itemize}
+}
+\CVItem{Android Developer Intern | IoT Turkey | Istanbul, Turkey | 06/2021 - 08/2021}{
+\begin{itemize}
+\item Architected Android applications using \textbf{Kotlin} and \textbf{Firebase}, focusing on real-time data synchronization.
 \end{itemize}
 }
 }
@@ -111,7 +99,18 @@ Turkey \\ % Address 3
 \CVSection{Projects}
 
 {\small
-\CVItem{\href{https://github.com/karabulut18/redis}{High-Performance Redis Clone} \hfill \textit{C++17, POSIX, TCP Sockets}}
+\CVItem{\href{https://github.com/karabulut18/semanticCommunication}{Wireless Processing | Semantic Communication Testbed} \hfill \textit{Python, GNU Radio, Docker}}
+{
+\begin{itemize}
+\item Developed a modular testbed for semantic communication using \textbf{GNU Radio} and \textbf{Docker}, simulating wireless channel impairments and BPSK modulation.
+\end{itemize}
+}
+}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+{\small
+\CVItem{\href{https://github.com/karabulut18/redis}{Database Engineering | High-Performance Redis Clone} \hfill \textit{C++17, POSIX, TCP Sockets}}
 {
 \begin{itemize}
 \item Architected a multi-threaded, high-throughput Key-Value store with \textbf{zero-copy network buffers} and custom \textbf{RESP3 protocol} parsing.
@@ -123,22 +122,26 @@ Turkey \\ % Address 3
 \end{minipage}
 
 \begin{minipage}{\linewidth}
-\CVItem{\href{https://github.com/karabulut18/systemProgramming}{System Programming Experiments} \hfill \textit{C, POSIX}}
+{\small
+\CVItem{\href{https://github.com/karabulut18/systemProgramming}{Systems Programming | POSIX Utilities Experiments} \hfill \textit{C, POSIX}}
 {
 \begin{itemize}
 \item Implemented various low-level utilities exploring process management, concurrency, and POSIX system calls.
 \end{itemize}
 }
+}
 \end{minipage}
 
 \begin{minipage}{\linewidth}
-\CVItem{\href{https://github.com/karabulut18/carpik_kaldirimlar}{Çarpık Kaldırımlar} | \href{https://carpik-kaldirimlar.web.app/}{Live Web App} \hfill \textit{Flutter, Dart, Firebase}}
+{\small
+\CVItem{\href{https://github.com/karabulut18/carpik_kaldirimlar}{Web Development | Çarpık Kaldırımlar App} \hfill \textit{Flutter, Dart, Firebase}}
 {
 \begin{itemize}
 \item Developed a scalable web application utilizing \textbf{Flutter} and \textbf{Firebase} (Firestore, Auth), featuring rich-text Markdown editing and link previews.
 \item Engineered a \textbf{relational social engine} supporting nested threaded replies, user tagging, and real-time like synchronizations.
 \item Implemented robust server-side Firestore security rules and a role-based Admin Panel for secure community moderation.
 \end{itemize}
+}
 }
 \end{minipage}
 
@@ -148,14 +151,22 @@ Turkey \\ % Address 3
 \begin{minipage}{\linewidth}
 \CVSection{Technical Skills}
 {\small
-\begin{tabular}{@{}p{0.31\linewidth} p{0.31\linewidth} p{0.31\linewidth}@{}}
-\textbf{Languages} & \textbf{Tools} & \textbf{Topics} \\
-\bluebullet C/C++, Python & \bluebullet Git, Docker, Linux & \bluebullet Distributed Sys. \\
-\bluebullet Kotlin & \bluebullet GDB, Valgrind, SVN & \bluebullet Network Prog. \\
-& \bluebullet GNU Radio, CMake & \bluebullet Multithreading \\
-\end{tabular}
+\begin{itemize}
+\item \textbf{Languages:} C, C++17, Python, Kotlin, Dart
+\item \textbf{Tools:} Git, Docker, Linux, GDB, Valgrind, CMake, GNU Radio
+\item \textbf{Expertise:} Systems Programming, Distributed Systems, Network Programming, Multi-threading, Zero-copy
+\end{itemize}
 }
 \end{minipage}
+
+\CVSection{Volunteer Experience}
+{\small
+\begin{itemize}
+\item \textbf{ITU Volunteer Club} (09/2018 - 06/2019): Tutored high school students in \textbf{Geometry} and Math, fostering equal opportunity in education.
+\item \textbf{IoT Turkey}: Contributed to business development and strategic partnerships.
+\end{itemize}
+}
+
 
 
 
