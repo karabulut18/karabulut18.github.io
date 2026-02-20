@@ -97,12 +97,11 @@ Turkey \\ % Address 3
 \CVSection{Education}
 
 {\small
-\CVItem{Istanbul Technical University, Computer Engineering \hfill 2018 -- 2025}{
+\CVItem{Istanbul Technical University, B.S. Computer Engineering \hfill Graduated 2025}{
 \begin{itemize}
 \item \textbf{Graduation Project:} Developed a modular testbed for \href{https://github.com/karabulut18/semanticCommunication}{semantic communication} using GNU Radio and Docker, simulating wireless channel impairments and BPSK modulation.
 \end{itemize}
 }
-\CVItem{Kahramanmaraş Science High School \hfill 2014 -- 2018}{}
 }
 
 %----------------------------------------------------------------------------------------
@@ -112,10 +111,12 @@ Turkey \\ % Address 3
 \CVSection{Projects}
 
 {\small
-\CVItem{\href{https://github.com/karabulut18/redis}{Redis from Scratch} \hfill \textit{C++}}
+\CVItem{\href{https://github.com/karabulut18/redis}{High-Performance Redis Clone} \hfill \textit{C++17, POSIX, TCP Sockets}}
 {
 \begin{itemize}
-\item Developed a high-performance Key-Value store from the ground up, implementing custom protocol parsing and socket programming.
+\item Architected a multi-threaded, high-throughput Key-Value store with \textbf{zero-copy network buffers} and custom \textbf{RESP3 protocol} parsing.
+\item Engineered a \textbf{lock-free concurrent Pub/Sub engine} utilizing Producer-Consumer ring buffers to eliminate mutex contention across I/O and worker threads.
+\item Implemented robust persistence mechanics including point-in-time \textbf{RDB binary snapshotting} and \textbf{AOF background rewrites} leveraging Linux \texttt{fork()} Copy-On-Write semantics.
 \end{itemize}
 }
 }
@@ -126,6 +127,17 @@ Turkey \\ % Address 3
 {
 \begin{itemize}
 \item Implemented various low-level utilities exploring process management, concurrency, and POSIX system calls.
+\end{itemize}
+}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\CVItem{\href{https://github.com/karabulut18/carpik_kaldirimlar}{Çarpık Kaldırımlar} | \href{https://carpik-kaldirimlar.web.app/}{Live Web App} \hfill \textit{Flutter, Dart, Firebase}}
+{
+\begin{itemize}
+\item Developed a scalable web application utilizing \textbf{Flutter} and \textbf{Firebase} (Firestore, Auth), featuring rich-text Markdown editing and link previews.
+\item Engineered a \textbf{relational social engine} supporting nested threaded replies, user tagging, and real-time like synchronizations.
+\item Implemented robust server-side Firestore security rules and a role-based Admin Panel for secure community moderation.
 \end{itemize}
 }
 \end{minipage}

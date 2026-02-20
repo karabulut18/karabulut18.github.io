@@ -1,5 +1,7 @@
 # Salih Karabulut - Personal Website & CV
 
+🚀 **[View Live CV](https://karabulut18.github.io/cv/)**
+
 Automated LaTeX CV and Portfolio website for Salih Karabulut.
 
 ## Features
