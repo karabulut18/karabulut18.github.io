@@ -52,7 +52,7 @@ Istanbul, Turkey \\ % Address
 
 \cvheading{Salih Karabulut} % Large heading - your name
 
-\cvsubheading{Computer Engineer} % Subheading - your occupation/specialization
+\cvsubheading{Systems \& Infrastructure Engineer} % Subheading - your occupation/specialization
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -69,14 +69,14 @@ Istanbul, Turkey \\ % Address
 \CVSection{Experience}
 {\small
 
-\CVItem{Software Developer | Fintech / HFT Company | Istanbul, Turkey | 05/2023 - 07/2025}{
+\CVItem{Infrastructure Engineer | Proprietary Trading Firm | Istanbul, Turkey | 05/2023 - 07/2025}{
 \begin{itemize}
-\item Architected a \textbf{distributed task-allocation system} in \textbf{C++17} using a requester-server-processor topology, ensuring fault-tolerant delivery and real-time execution in a Systems Programming environment.
-\item Engineered a high-throughput \textbf{TCP file server} optimized for concurrent read/write operations; implemented a custom static library and a pub/sub mechanism for automated vertical file synchronization.
-\item Developed a \textbf{low-latency protocol tunneling application} (TCP/UDP) for seamless bi-directional translation between legacy and modern systems, reducing latency by 20\%.
-\item Maintained and optimized mission-critical \textbf{C/C++ shared libraries}, delivering robust tooling using Memory Management, IPC, STL, and POSIX Threads for high-performance file IO.
-\item Deployed a \textbf{scalable state-monitoring solution} using Socket Programming for a fleet of 100+ machines via TCP, enabling real-time infrastructure visibility in the Low-Latency Engineering domain.
-\item Developed a \textbf{real-time state-synchronization system} designed for remote environment control, focusing on high-performance state propagation and system responsiveness.
+\item Sole engineer on a \textbf{distributed backtest system} spanning 30 machines with 3+ worker processes each (90+ parallel simulations); built requester, processor, server, and Qt monitor components in \textbf{C/C++11}; checksum-based file distribution to avoid redundant transfers, coredump transport back to requester, and real-time job cancellation.
+\item Designed and delivered a \textbf{centralised config file server} serving 150+ machines and hundreds of processes; SVN-backed cache with pub/sub push on change, dual-instance HA, and a thin client library integrated across the entire codebase.
+\item Built a \textbf{distributed runtime configuration system} (ParamSyncServer / ParamSyncClient) enabling runtime parameter control across all company applications; clients self-register via periodic UDP announcements, server connects back via TCP, maintains live parameter map, subscribers receive change notifications — sole designer and implementer.
+\item Rewrote a \textbf{fleet-wide host-state monitor} from Python to C++; deployed across 100+ machines via TCP with a dedicated file-server instance for state distribution.
+\item Developed a \textbf{bidirectional TCP$\leftrightarrow$UDP tunneling application} used by multiple latency-sensitive components for protocol bridging between legacy and modern subsystems.
+\item Maintained core and network \textbf{shared C/C++11 libraries}; debugged production issues and began exploratory work on next-generation network layer rewrite.
 \end{itemize}
 }
 
@@ -99,10 +99,11 @@ Istanbul, Turkey \\ % Address
 \CVSection{Projects}
 
 {\small
-\CVItem{\href{https://github.com/karabulut18/semanticCommunication}{Wireless Processing | Semantic Communication Testbed} \hfill \textit{Python, GNU Radio, Docker}}
+\CVItem{Systems | HFT Market-Making Engine \hfill \textit{C++20, CMake, GoogleTest, Docker} \hfill \textit{(private)}}
 {
 \begin{itemize}
-\item Developed a modular testbed for semantic communication using \textbf{GNU Radio} and \textbf{Docker}, simulating wireless channel impairments and BPSK modulation.
+\item Full market-making system targeting Binance perpetuals: order book, execution engine, OMS, position manager, CRTP-based strategy layer, backtest engine with walk-forward optimisation, compliance (kill switch, post-trade surveillance), and QuestDB observability stack.
+\item 435 unit tests; Google Benchmark suite; Dockerised feed archiver for live tick-data collection.
 \end{itemize}
 }
 }
@@ -123,10 +124,10 @@ Istanbul, Turkey \\ % Address
 
 \begin{minipage}{\linewidth}
 {\small
-\CVItem{\href{https://github.com/karabulut18/systemProgramming}{Systems Programming | POSIX Utilities Experiments} \hfill \textit{C, POSIX}}
+\CVItem{\href{https://github.com/karabulut18/semanticCommunication}{Wireless | Semantic Communication Testbed} \hfill \textit{Python, GNU Radio, Docker}}
 {
 \begin{itemize}
-\item Implemented various low-level utilities exploring process management, concurrency, and POSIX system calls.
+\item Developed a modular testbed for semantic communication using \textbf{GNU Radio} and \textbf{Docker}, simulating wireless channel impairments and BPSK modulation.
 \end{itemize}
 }
 }
@@ -152,9 +153,9 @@ Istanbul, Turkey \\ % Address
 \CVSection{Technical Skills}
 {\small
 \begin{itemize}
-\item \textbf{Languages:} C, C++17, Python, Kotlin, Dart
-\item \textbf{Tools:} Git, Docker, Linux, GDB, Valgrind, CMake, GNU Radio
-\item \textbf{Expertise:} Systems Programming, Distributed Systems, Network Programming, Multi-threading, Zero-copy
+\item \textbf{Languages:} C, C++11/17/20, Python, Kotlin, Dart
+\item \textbf{Tools:} Git, Docker, Linux, GDB, Valgrind, CMake, GoogleTest
+\item \textbf{Expertise:} Distributed Systems, Network Programming, Lock-free Data Structures, SPSC Queues, Multi-threading, POSIX IPC
 \end{itemize}
 }
 \end{minipage}
