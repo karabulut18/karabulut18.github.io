@@ -2,14 +2,11 @@
 latex/out/
 *.aux
 *.log
-*.out
-*.pdf
 *.fdb_latexmk
 *.fls
 *.synctex.gz
-
-# Deployment
-/docs/
+latex/*.pdf
+latex/*.out
 
 # System
 .agent
