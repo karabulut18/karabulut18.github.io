@@ -36,7 +36,7 @@ Salih Karabulut \\ % Your name
 Istanbul, Turkey \\ % Address
 \vfill % Whitespace under this block to push it up under the photo
 \Sep
-{\tiny v2026.03 \\[\smallskipamount]
+{\tiny v2026.04 \\[\smallskipamount]
 \href{https://karabulut18.github.io/cv/}{Latest version online} \\}
 \end{flushright}
 }
@@ -102,11 +102,12 @@ Istanbul, Turkey \\ % Address
 \CVSection{Projects}
 
 {\small
-\CVItem{Systems | HFT Market-Making Engine \hfill \textit{C++20, CMake, GoogleTest, Docker} \hfill \textit{(private)}}
+\CVItem{Systems | Algorithmic Trading Engine \hfill \textit{C++20, CMake, GoogleTest, Docker} \hfill \textit{(private)}}
 {
 \begin{itemize}
-\item Full market-making system targeting Binance perpetuals: order book, execution engine, OMS, position manager, CRTP-based strategy layer, backtest engine with walk-forward optimisation, compliance (kill switch, post-trade surveillance), and QuestDB observability stack.
-\item 435 unit tests; Google Benchmark suite; Dockerised feed archiver for live tick-data collection.
+\item End-to-end Binance spot market-making system: lock-free order book (SeqLock), CRTP zero-overhead strategy dispatch, OMS with ObjectPool order allocation, pre-trade risk, and async SQLite persistence — no heap allocation on the critical path.
+\item Full data pipeline from live feed (24-symbol WebSocket archiver with Binance bootstrap sync protocol) through cloud-archived binary tick files (mmap reads, binary-search seek) to a backtest engine with walk-forward optimisation and fill simulation.
+\item Operational layer: hot parameter reload via UDP discovery + TCP ParamServer, process supervisor daemon, circuit breakers, kill switch with deferred-trip pattern, post-trade surveillance, and QuestDB observability — 827 unit tests, fuzz tests, and a Google Benchmark suite.
 \end{itemize}
 }
 }
