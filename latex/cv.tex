@@ -154,8 +154,14 @@ Istanbul, Turkey \\ % Address
 \item Ensured data integrity via \textbf{optimistic locking} (Firestore transactions) and in-memory caching.
 \end{itemize}
 }
+\CVItem{\href{https://github.com/karabulut18/scale-guard}{Backend | Distributed Rate Limiter} \hfill \textit{Go, PostgreSQL, gRPC, Docker}}
+{
+\begin{itemize}
+\item Built a \textbf{token-bucket rate limiter} with an in-memory hot path and \textbf{100ms async write-behind} to PostgreSQL, sustaining sub-millisecond p99 latency under load.
+\item Implemented \textbf{multi-tenant} config watching, fail-open degraded mode, and a gRPC interceptor chain with graceful shutdown.
+\end{itemize}
+}
 \end{minipage}
-
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
